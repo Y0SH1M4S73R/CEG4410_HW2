@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="330.0" prefWidth="290.0" spacing="10.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox>
+         <children>
+            <Button fx:id="undoButton" mnemonicParsing="false" onAction="#onUndo" text="Undo" />
+            <Button fx:id="redoButton" mnemonicParsing="false" onAction="#onRedo" text="Redo" />
+         </children>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+      </HBox>
+      <BorderPane>
+         <left>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Year:" BorderPane.alignment="CENTER" />
+         </left>
+         <right>
+            <TextField fx:id="yearField" maxWidth="-Infinity" onAction="#onYearEntered" prefWidth="64.0" BorderPane.alignment="CENTER" />
+         </right>
+      </BorderPane>
+      <BorderPane>
+         <left>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Month:" BorderPane.alignment="CENTER" />
+         </left>
+         <right>
+            <TextField fx:id="monthField" maxWidth="-Infinity" onAction="#onMonthEntered" prefWidth="64.0" BorderPane.alignment="CENTER" />
+         </right>
+      </BorderPane>
+      <BorderPane>
+         <left>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Day:" BorderPane.alignment="CENTER" />
+         </left>
+         <right>
+            <TextField fx:id="dayField" maxWidth="-Infinity" onAction="#onDayEntered" prefWidth="64.0" BorderPane.alignment="CENTER" />
+         </right>
+      </BorderPane>
+      <BorderPane>
+         <left>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Hour:" BorderPane.alignment="CENTER" />
+         </left>
+         <right>
+            <HBox BorderPane.alignment="CENTER">
+               <children>
+                  <TextField fx:id="hourField" maxWidth="-Infinity" onAction="#onHourEntered" prefWidth="64.0" />
+                  <Button fx:id="hourAMToggle" mnemonicParsing="false" onAction="#onAMPMToggle" text="A.M." />
+               </children>
+            </HBox>
+         </right>
+      </BorderPane>
+      <BorderPane>
+         <left>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Minute:" BorderPane.alignment="CENTER" />
+         </left>
+         <right>
+            <TextField fx:id="minuteField" maxWidth="-Infinity" onAction="#onMinuteEntered" prefWidth="64.0" BorderPane.alignment="CENTER" />
+         </right>
+      </BorderPane>
+      <BorderPane>
+         <left>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Second:" BorderPane.alignment="CENTER" />
+         </left>
+         <right>
+            <TextField fx:id="secondField" maxWidth="-Infinity" onAction="#onSecondEntered" prefWidth="64.0" BorderPane.alignment="CENTER" />
+         </right>
+      </BorderPane>
+      <HBox>
+         <children>
+            <Button mnemonicParsing="false" onAction="#requestDigital" text="New Digital Clock" />
+            <Button mnemonicParsing="false" onAction="#requestAnalog" text="New Analog Clock" />
+         </children>
+      </HBox>
+   </children>
+   <padding>
+      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+   </padding>
+</VBox>

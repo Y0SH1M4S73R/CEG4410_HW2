@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox fx:id="root" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Text fx:id="dateLine" strokeType="OUTSIDE" strokeWidth="0.0" text="1/1/1970" />
+      <Text fx:id="timeLine" strokeType="OUTSIDE" strokeWidth="0.0" text="12:00:00 AM">
+         <font>
+            <Font size="48.0" />
+         </font>
+      </Text>
+   </children>
+</VBox>

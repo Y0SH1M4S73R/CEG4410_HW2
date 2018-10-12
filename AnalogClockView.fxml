@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<StackPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="350.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Circle fill="#1f93ff00" radius="145.0" stroke="BLACK" strokeType="INSIDE" />
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="12" translateY="-130.0">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Text>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="1" translateX="65.0" translateY="-112.0">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Text>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="2" translateX="112.0" translateY="-65.0">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Text>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="3" translateX="130.0">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Text>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="4" translateX="112.0" translateY="65.0">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Text>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="5" translateX="65.0" translateY="112.0">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Text>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="6" translateY="130.0">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Text>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="7" translateX="-65.0" translateY="112.0">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Text>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="8" translateX="-112.0" translateY="65.0">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Text>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="9" translateX="-130.0">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Text>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="10" translateX="-112.0" translateY="-65.0">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Text>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="11" translateX="-65.0" translateY="-112.0">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Text>
+      <Line fx:id="hourHand" endY="-60.0" strokeLineCap="ROUND" strokeWidth="10.0" translateY="-30.0" />
+      <Line fx:id="minuteHand" endY="-120.0" strokeLineCap="ROUND" strokeWidth="7.0" translateY="-60.0" />
+      <Line fx:id="secondHand" endY="-120.0" stroke="RED" strokeLineCap="ROUND" strokeWidth="3.0" translateY="-60.0" />
+      <Text fx:id="dateLine" strokeType="OUTSIDE" strokeWidth="0.0" text="1/1/1970" translateY="-160.0" />
+   </children>
+</StackPane>
